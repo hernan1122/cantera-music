@@ -1,5 +1,6 @@
 import {React, useState, useEffect, useRef} from "react";
 import { PlayerButtons } from "./PlayerButtons";
+import { PlayerFloating } from '../components/PlayerFloating';
 import '../styles/PlayerSlider.css'
 
 export function PlayerSlider({api, indexp}) {
@@ -13,8 +14,13 @@ export function PlayerSlider({api, indexp}) {
   const [totalTime, setTotalTime] = useState('0:00')
   const [currentTimeSong, setCurrentTimeSong] = useState('0:00')
   const [isRepeated, setIsrepeated] = useState(false)
+  const [currentSong, setCurrentSong] = useState(null);
+  /* const [progress, setProgress] = useState(null) */
+
   useEffect(() => {
-    setSongDescription({name: api[index].nameFile, artist: api[index].nameAuthor})
+    setSongDescription({ name: api[index].nameFile, artist: api[index].nameAuthor })
+    // Establecer la canción actual en el estado currentSong
+    setCurrentSong(api[index]);
   }, [index])
 
   useEffect(() => {
@@ -44,6 +50,7 @@ export function PlayerSlider({api, indexp}) {
         setIndex(index+1)
       }
     }, 1000)
+
     let minutos = Math.floor(audioRef.current.duration / 60);
     let segundosRestantes = audioRef.current.duration % 60;
 
@@ -111,8 +118,27 @@ export function PlayerSlider({api, indexp}) {
           <span>{totalTime}</span>
         </div>
       </section>
-      <PlayerButtons isPlaying={isPlaying} handlePlayPause={handlePlayPause} api={api} index={index} updateIndex={updateIndex} isRepeated={isRepeated} handleRepeat={handleRepeat} />
+      <PlayerButtons
+        isPlaying={isPlaying}
+        handlePlayPause={handlePlayPause}
+        api={api}
+        index={index}
+        updateIndex={updateIndex}
+        isRepeated={isRepeated}
+        handleRepeat={handleRepeat}
+      />
+      {currentSong && <PlayerFloating
+          currentSong={currentSong}
+          isPlaying={isPlaying}
+          handlePlayPause={handlePlayPause}
+          api={api}
+          index={index}
+          updateIndex={updateIndex}
+          progressBarRef={progressBarRef}
+          duration={duration}
+          audioRef={audioRef}
+        />
+      }
     </>
   );
 }
-//Plnpmayer Slider
