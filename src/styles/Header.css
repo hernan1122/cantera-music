@@ -1,0 +1,26 @@
+.Header {
+  width: 100%;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  background: var(--background-header-menu);
+  z-index: 2;
+}
+.Header-title {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.Header-content-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.Header-logoApp {
+  width: 40px;
+}

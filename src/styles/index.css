@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --background: #012433;
+  --background-header-menu: #011f2c;
+  --title: #008a5e;
+  --text-primary: #fff;
+  --text-secundary: #acacac;
+  --text-shadow: #777;
+  --icons-buttons: #198754;
+  --circle-icons: #d9d9d9;
+  --circle-shadow: #011822;
+  --player-shadow: #052f41;
+  --footer-menu-hover: #2eb676;
+  --uploading-audio: #20a725;
+  --uploading-audio-child: #094127;
+  --errors-form: #d31b14;
+  --loading: #adadad85;
+  --progressline: rgba(128, 128, 128, 0.199);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* padding: 0 20px; */
+  font-family: 'Ubuntu', sans-serif;
+  background: var(--background);
+}
+body::-webkit-scrollbar {
+  width: 3px;
+  background-color: none;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--icons-buttons);
+  border-radius: 10px;
+}
+h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+h2 {
+  padding: 20px 0 15px 0;
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+h4 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--text-primary);
+}
+h5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 18px;
+  color: var(--text-shadow);
+}
+h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--icons-buttons);
+}
+p {
+  font-size: 1.3rem;
+  color: var(--text-secundary);
+}
+span {
+  color: var(--title);
+}

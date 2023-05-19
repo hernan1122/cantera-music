@@ -1,0 +1,47 @@
+.Search {
+  width: 100%;
+  margin-top: 20px;
+}
+.Search-container-input {
+  width: 89%;
+  margin: 0 20px;
+  background: var(--background-header-menu);
+  display: flex;
+  border-radius: 50px;
+  box-shadow: 0 0 4px 2px var(--circle-shadow);
+}
+.Search-input {
+  width: 90%;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  background: transparent;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--text-primary);
+  border: none;
+  outline: none;
+}
+.Search-icon-container {
+  width: 60px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+.Search-icons {
+  font-size: 24px;
+  color: var(--text-secundary);
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+.Search-icons:hover {
+  color: var(--icons-buttons);
+}
+.Search-container-suggesting,
+.Search-container-podcast {
+  padding: 0 20px;
+}
+.Search-container-audiobook {
+  margin-bottom: 65px;
+  padding: 0 20px;
+}

@@ -1,0 +1,48 @@
+.PlayerButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+.PlayerButtons-container {
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+.PlayerButtons-container .small {
+  font-size: 20px;
+  color: var(--icons-buttons);
+}
+.PlayerButtons-container .small:hover {
+  color: var(--text-secundary);
+}
+.PlayerButtons-container .play-pause {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 0 24px 2px var(--circle-shadow);
+  border: var(--circle-shadow);
+  cursor: pointer;
+}
+.PlayerButtons-container .play-pause:active {
+  box-shadow: var(--circle-shadow);
+  transform: translate(3px, 3px);
+}
+.btnPlay {
+  font-size: 45px;
+  color: var(--icons-buttons);
+  padding-left: 4px;
+}
+.btnPause {
+  font-size: 45px;
+  color: var(--icons-buttons);
+}

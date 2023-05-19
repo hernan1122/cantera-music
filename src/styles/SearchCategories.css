@@ -1,0 +1,41 @@
+.SearchCategories {
+  padding-bottom: 5px;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.SearchCategories::-webkit-scrollbar {
+  height: 1px;
+  background-color: none;
+}
+.SearchCategories::-webkit-scrollbar-thumb {
+  background-color: var(--icons-buttons);
+  border-radius: 10px;
+}
+.SearchCategories-item {
+  width: 124px;
+  height: auto;
+  padding: 0 3px 4px 3px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.1s ease-in-out all;
+}
+.SearchCategories-item:hover {
+  background: var(--background-header-menu);
+}
+.SearchCategories-item img {
+  width: 124px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+.SearchCategories-description h3 {
+  font-size: 1.4rem;
+  margin-bottom: 3px;
+}

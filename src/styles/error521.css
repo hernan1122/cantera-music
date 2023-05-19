@@ -1,0 +1,65 @@
+.error521-header {
+  width: 100%;
+  height: 100vh;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  background-color: var(--background-header-menu);
+}
+.error521-header-title {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.error521-header-content-title {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.error521-header-logoApp {
+  width: 40px;
+}
+.error521-content-imgError{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.error521-imgError{
+  width: 280px;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.error521-error-LineText {
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  font-size: 2.7rem;
+  line-height: 35px;
+  text-shadow: 1px 2px 2px var(--text-shadow);
+}
+.error521-error-volver {
+  height: 45px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--icons-buttons);
+  padding:8px 70px;
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 2.2rem;
+  position: absolute;
+  bottom: 0;
+  border: none;
+  transform: translateY(50%);
+  text-decoration: none;  
+}

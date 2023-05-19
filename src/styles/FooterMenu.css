@@ -1,0 +1,59 @@
+.FooterMenu {
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  position: fixed;
+  bottom: 0;
+  background: var(--background-header-menu);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  z-index: 2;
+}
+.FooterMenu-link {
+  width: 50px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--icons-buttons);
+}
+.FooterMenu-link:hover :nth-child(1),
+.FooterMenu-link:hover :nth-child(2) {
+  color: var(--footer-menu-hover);
+}
+.FooterMenu-icons {
+  font-size: 24px;
+  color: var(--icons-buttons);
+}
+.active {
+  font-size: 33px;
+  color: var(--footer-menu-hover);
+}
+.FooterMenu-container-categories {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+}
+.FooterMenu-categories-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  color: var(--text-secundary);
+  cursor: pointer;
+}
+.FooterMenu-categories {
+  height: 175px;
+  position: absolute;
+  background: var(--background);
+  bottom: calc(100vh - 50vh - 87.5px);
+  border-radius: 15px;
+}

@@ -1,0 +1,44 @@
+.LoadingChildren-container {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.LoadingChildren-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  background-color: var(--loading);
+  display: block;
+  border-radius: 10px;
+  animation: loading 3.5s alternate infinite ease;
+}
+.LoadingChildren-title-song {
+  width: 120px;
+  height: 16px;
+  margin-bottom: 4px;
+  background-color: var(--loading);
+  display: block;
+  border-radius: 2px;
+  animation: loading 3.5s alternate infinite ease;
+}
+.LoadingChildren-artist-song {
+  width: 160px;
+  height: 14px;
+  background-color: var(--loading);
+  display: block;
+  border-radius: 2px;
+  animation: loading 3.5s alternate infinite ease;
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

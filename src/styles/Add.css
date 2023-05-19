@@ -1,0 +1,120 @@
+.Add {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+.Add-container {
+  width: 100%;
+  /* height: 520px; */
+  height: 580px;
+  padding: 8px 20px;
+  position: absolute;
+  top: calc(100vh - 580px);
+  background: var(--background);
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+}
+.Add-container h2 {
+  margin-bottom: 10px;
+}
+.Add-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.Add-content-input {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.Add-content-input .name,
+.Add-content-input .artist,
+.Add-content-input .category,
+.Add-content-input .genres,
+.Add-content-input .file {
+  padding: 0 6px;
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  background: var(--background);
+  font-size: 1.4rem;
+  color: var(--text-secundary);
+}
+.Add-input,
+.Add-input-audio {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--text-primary);
+  border: 1px solid var(--icons-buttons);
+  border-radius: 10px;
+  outline: none;
+}
+.Add-input:focus {
+  border: 2px solid var(--icons-buttons);
+}
+.Add-input option {
+  background: var(--background);
+  color: var(--text-primary);
+}
+.Add-input-audio {
+  height: 110px;
+  display: flex;
+}
+input[type="file" i]::-webkit-file-upload-button {
+  margin: 7px 0;
+  background: transparent;
+  color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+input[type="file" i] {
+  color: var(--text-primary);
+}
+.Add-error {
+  margin-left: 14px;
+  padding-top: 4px;
+  font-size: 1.1rem;
+  color: var(--errors-form);
+}
+.Add-container-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Add-container-btn button {
+  width: 147px;
+  padding: 10px 0;
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--text-primary);
+  border: 1px solid var(--icons-buttons);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.Add-btn-cancel {
+  background: transparent;
+}
+.Add-btn-cancel:hover {
+  transform: translateY(-3px);
+}
+.Add-btn-save {
+  background: var(--icons-buttons);
+}
+.Add-btn-save.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.Add-btn-save:hover {
+  transform: translateY(-3px);
+}

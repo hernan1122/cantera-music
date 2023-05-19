@@ -1,0 +1,23 @@
+.PlayerHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.PlayerHeader-Icon-Back {
+  font-size: 34px;
+  margin: 20px 0 10px 0;
+  color: var(--circle-icons);
+  transition: 0.3s ease-in-out all;
+}
+.PlayerHeader-Icon {
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+  color: var(--circle-icons);
+  transition: 0.3s ease-in-out all;
+}
+.PlayerHeader-Icon:hover,
+.PlayerHeader-Icon-Back:hover {
+  color: var(--icons-buttons);
+}

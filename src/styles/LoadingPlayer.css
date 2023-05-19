@@ -1,0 +1,52 @@
+.LoadingPlayer {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  place-items: center;
+}
+.LoadingPlayer-container {
+  --speed-of-animation: 0.9s;
+  --gap: 6px;
+  --first-color: #198754;
+  --second-color: #36ca3b;
+  --third-color: #1e6953;
+  --fourth-color: #104631;
+  --fifth-color: #35d452;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  gap: 6px;
+  height: 100px;
+  }
+.LoadingPlayer-container span {
+  width: 4px;
+  height: 50px;
+  background: var(--first-color);
+  animation: scale var(--speed-of-animation) ease-in-out infinite;
+  }
+.LoadingPlayer-container span:nth-child(2) {
+  background: var(--second-color);
+  animation-delay: -0.8s;
+  }
+.LoadingPlayer-container span:nth-child(3) {
+  background: var(--third-color);
+  animation-delay: -0.7s;
+  }
+.LoadingPlayer-container span:nth-child(4) {
+  background: var(--fourth-color);
+  animation-delay: -0.6s;
+  }
+.LoadingPlayer-container span:nth-child(5) {
+  background: var(--fifth-color);
+  animation-delay: -0.5s;
+  }
+@keyframes scale {
+  0%, 40%, 100% {
+    transform: scaleY(0.05);
+  }
+
+  20% {
+    transform: scaleY(1);
+  }
+}
