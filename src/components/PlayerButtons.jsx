@@ -4,7 +4,6 @@ import '../styles/PlayerButtons.css'
 //icons
 import {BsPlayFill, BsPauseFill, BsShuffle, BsRewindFill, BsFillFastForwardFill, BsRepeat1, BsRepeat } from "react-icons/bs"
 
-
 export function PlayerButtons({isPlaying, handlePlayPause, updateIndex, index, api, handleRepeat, isRepeated}) {
 
   return(
