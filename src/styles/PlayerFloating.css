@@ -1,0 +1,69 @@
+.PlayerFloating {
+  width: 100%;
+  height: 70px;
+  padding: 0 10px;
+  position: fixed;
+  bottom: 55px;
+  background: var(--background-header-menu);
+  border-bottom: 1px solid  var(--circle-shadow);
+  display: flex;
+  align-items: center;
+}
+.PlayerFloating-Progressline {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: var(--progressline);
+  border-radius: 10px;
+}
+.PlayerFloating-Progressline div {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--title);
+  position: relative;
+  border-radius: 10px;
+}
+.PlayerFloating-Progressline div:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: var(--title);
+  left: calc(100% - 7px);
+  top: calc(50% - 7px);
+}
+.PlayerFloating-audio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.PlayerFloating-audio img {
+  width: 50px;
+  margin: 0 10px 0 10px;
+  border-radius: 6px;
+}
+.PlayerFloating-controls {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.PlayerFloating-play-pause {
+  font-size: 30px;
+  color: var(--icons-buttons);
+  transition: 0.1s all ease-in-out;
+}
+.PlayerFloating-next {
+  font-size: 35px;
+  color: var(--icons-buttons);
+  transition: 0.1s all ease-in-out;
+}
+.PlayerFloating-play-pause:hover,
+.PlayerFloating-next:hover {
+  color: var(--footer-menu-hover);
+}
